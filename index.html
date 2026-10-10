@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Walid Crafts — Thumbnail Designer</title>
+<meta name="description" content="Walid Crafts — premium YouTube thumbnail design for creators, brands and channels.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050706;--panel:rgba(10,15,12,.78);--line:rgba(220,226,211,.16);--line2:rgba(220,226,211,.08);--white:#edf0e5;--muted:#9ba197;--max:1220px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 50% 15%,rgba(72,91,75,.24),transparent 28%),radial-gradient(circle at 15% 65%,rgba(46,62,49,.18),transparent 25%),linear-gradient(180deg,#030504,#07100b 48%,#030504);color:var(--white);font-family:"DM Sans",Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:20;opacity:.12;background-image:radial-gradient(rgba(255,255,255,.5) .65px,transparent .8px),radial-gradient(rgba(255,255,255,.25) .55px,transparent .75px);background-size:9px 9px,13px 13px;mix-blend-mode:screen}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:19;background:radial-gradient(ellipse at center,transparent 42%,rgba(0,0,0,.82) 100%)}
+a{text-decoration:none;color:inherit}.container{width:min(var(--max),92%);margin:auto}.mono{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:#8d968c}
+.display{font-family:Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:2px;line-height:.9}
+nav{position:fixed;top:0;left:0;right:0;z-index:30;padding:22px 0;background:linear-gradient(180deg,rgba(2,4,3,.96),rgba(2,4,3,.25),transparent)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}.brand{font-family:Anton;font-size:25px;letter-spacing:2px}.brand span{opacity:.45}.nav-links{display:flex;gap:28px}.nav-links a{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#aeb4aa}.nav-links a:hover{color:white}
+.hero{min-height:100vh;display:flex;align-items:center;padding:125px 0 90px;position:relative}.hero:before{content:"";position:absolute;left:50%;top:45%;width:850px;height:500px;transform:translate(-50%,-50%);background:radial-gradient(ellipse,rgba(70,91,75,.28),transparent 67%);filter:blur(25px)}
+.hero-inner{position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:65px;align-items:center}.hero-label{margin-bottom:20px}.hero h1{font-size:clamp(92px,14vw,190px);margin:0;background:linear-gradient(180deg,#f5f4e5,#b9beaf 50%,#687168);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 15px 18px rgba(0,0,0,.55))}.hero h2{font-size:clamp(25px,3.3vw,47px);margin:28px 0 18px;max-width:720px}.hero-copy{max-width:650px;color:var(--muted);font-size:15px;line-height:1.85}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;padding:15px 22px;border:1px solid var(--line);background:rgba(220,225,211,.06);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;transition:.25s}.btn:hover{background:rgba(220,225,211,.14);transform:translateY(-2px)}.btn.primary{background:#dfe3d7;color:#090c09;border-color:#dfe3d7}.btn.primary:hover{background:#fff}
+.portrait-frame{position:relative;padding:10px;border:1px solid rgba(220,226,211,.25);background:linear-gradient(135deg,rgba(210,215,203,.14),rgba(0,0,0,.35));box-shadow:0 30px 80px rgba(0,0,0,.55)}.portrait-frame:before{content:"";position:absolute;inset:7px;border:1px solid rgba(220,226,211,.08);pointer-events:none}.portrait-frame img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;filter:saturate(.72) contrast(.96)}.portrait-caption{display:flex;justify-content:space-between;padding:12px 5px 2px;font-size:10px;letter-spacing:1.7px;text-transform:uppercase;color:#858d84}
+.section{padding:120px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:45px}.section-title{font-size:clamp(55px,8vw,105px);margin:0}.section-desc{max-width:480px;color:var(--muted);line-height:1.75;font-size:14px}
+.portfolio-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{position:relative;min-height:390px;overflow:hidden;border:1px solid var(--line);background:radial-gradient(circle at 50% 45%,rgba(79,99,82,.22),transparent 55%),linear-gradient(145deg,#111813,#050806)}.project img{width:100%;height:100%;min-height:390px;object-fit:cover;display:block;opacity:.92;transition:.5s}.project:hover img{transform:scale(1.025);opacity:1}.project-placeholder{height:100%;min-height:390px;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px}.project-placeholder div{max-width:300px}.project-number{font-family:Anton;font-size:64px;color:rgba(230,235,220,.13);margin-bottom:10px}.project-placeholder h3{font-size:18px;text-transform:uppercase;letter-spacing:1px;margin:0 0 8px}.project-placeholder p{font-size:12px;color:#818a80;line-height:1.6;margin:0}.project-overlay{position:absolute;left:0;right:0;bottom:0;padding:25px;background:linear-gradient(transparent,rgba(0,0,0,.94))}.project-overlay h3{margin:0;text-transform:uppercase;font-size:19px}.project-overlay p{margin:6px 0 0;color:#aab0a6;font-size:12px}
+.process-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}.process-card{border:1px solid var(--line);background:var(--panel);padding:38px}.process-card h3{font-family:Anton;font-size:43px;letter-spacing:1px;margin:0 0 18px}.process-card p{color:var(--muted);line-height:1.8;font-size:14px}.steps{margin-top:28px;display:grid;gap:12px}.step{display:grid;grid-template-columns:55px 1fr;gap:15px;padding:17px 0;border-top:1px solid var(--line2)}.step-num{font-family:Anton;font-size:29px;color:#b9c0b2}.step strong{display:block;text-transform:uppercase;font-size:12px;letter-spacing:1.3px;margin-bottom:5px}.step span{font-size:12px;color:#7f887f;line-height:1.6}.process-image{border:1px solid var(--line);padding:10px;background:rgba(8,12,10,.65)}.process-image img{display:block;width:100%;height:100%;min-height:550px;object-fit:cover;filter:grayscale(.18) saturate(.72)}.image-note{margin-top:-62px;position:relative;margin-left:25px;margin-right:25px;border:1px solid rgba(220,226,211,.2);background:rgba(4,7,5,.87);padding:18px 20px;backdrop-filter:blur(8px)}.image-note strong{display:block;font-size:12px;text-transform:uppercase;letter-spacing:1.5px}.image-note span{display:block;color:#8a9289;font-size:11px;margin-top:5px}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.why{border:1px solid var(--line);padding:30px;background:rgba(7,12,9,.55)}.why .big{font-family:Anton;font-size:48px;color:#d5d9ce}.why h3{font-size:14px;text-transform:uppercase;letter-spacing:1px}.why p{color:#818981;font-size:13px;line-height:1.7}
+.contact{padding:140px 0 155px;text-align:center;background:radial-gradient(circle at center,rgba(66,84,69,.2),transparent 48%)}.contact h2{font-size:clamp(65px,11vw,145px);margin:0 0 25px}.contact p{max-width:590px;margin:auto;color:var(--muted);line-height:1.8}.contact .buttons{justify-content:center}
+footer{border-top:1px solid var(--line);padding:24px 0;color:#687068}.footer-inner{display:flex;justify-content:space-between;gap:20px;font-size:10px;letter-spacing:1.6px;text-transform:uppercase}
+@media(max-width:850px){.nav-links{display:none}.hero-inner,.process-grid{grid-template-columns:1fr}.hero{padding-top:120px}.portrait-frame{max-width:500px;margin:auto}.portfolio-grid,.why-grid{grid-template-columns:1fr}.section{padding:85px 0}.section-head{display:block}.section-desc{margin-top:20px}.process-image img{min-height:420px}}
+</style>
+</head>
+<body>
+<nav><div class="container nav-inner"><a class="brand" href="#">WALID<span> / CRAFTS</span></a><div class="nav-links"><a href="#work">Work</a><a href="#process">Process</a><a href="#about">About</a><a href="#contact">Hire Me</a></div></div></nav>
+
+<header class="hero">
+<div class="container hero-inner">
+<div>
+<div class="mono hero-label">Independent Thumbnail Designer • 2026</div>
+<h1 class="display">WANTED</h1>
+<h2>Thumbnails people can't scroll past.</h2>
+<p class="hero-copy">I'm <strong>Walid Crafts</strong> — a thumbnail designer focused on high-impact YouTube visuals, strong concepts and clean, believable compositions built to earn the click.</p>
+<div class="buttons"><a class="btn primary" href="#work">View My Work</a><a class="btn" href="#process">See My Process</a></div>
+</div>
+<div class="portrait-frame"><img src="assets/walid-profile.jpg" alt="Walid Crafts working at his desk"><div class="portrait-caption"><span>Creative Department</span><span>Dhaka / BD</span></div></div>
+</div>
+</header>
+
+<section class="section" id="work">
+<div class="container">
+<div class="section-head"><div><div class="mono">Case Files / 001—∞</div><h2 class="display section-title">THUMBNAILS</h2></div><p class="section-desc">My selected thumbnail work. New projects can be added from the <strong>projects.js</strong> file without changing the website layout.</p></div>
+<div class="portfolio-grid" id="portfolio"></div>
+</div>
+</section>
+
+<section class="section" id="process">
+<div class="container">
+<div class="section-head"><div><div class="mono">How the work gets made</div><h2 class="display section-title">THE PROCESS</h2></div><p class="section-desc">Not just pretty images. Every thumbnail starts with the video's idea, audience and click opportunity.</p></div>
+<div class="process-grid">
+<div class="process-card"><div class="mono">From idea → final thumbnail</div><h3>BUILT TO<br>GET THE CLICK</h3><p>I combine the video's core idea with visual storytelling, emotion, hierarchy and curiosity. The goal is to make the viewer understand the promise of the video in a fraction of a second.</p>
+<div class="steps">
+<div class="step"><div class="step-num">01</div><div><strong>Research</strong><span>Understand the video, audience, niche and competing thumbnails.</span></div></div>
+<div class="step"><div class="step-num">02</div><div><strong>Concept</strong><span>Find the strongest visual angle and build a clear thumbnail story.</span></div></div>
+<div class="step"><div class="step-num">03</div><div><strong>Design</strong><span>Composition, faces, lighting, color, depth and visual hierarchy.</span></div></div>
+<div class="step"><div class="step-num">04</div><div><strong>Refine</strong><span>Remove distractions, improve readability and polish the final image.</span></div></div>
+</div></div>
+<div class="process-image"><img src="assets/walid-profile.jpg" alt="Walid Crafts creating a thumbnail concept"><div class="image-note"><strong>Behind the craft</strong><span>Concept → composition → final visual</span></div></div>
+</div></div>
+</section>
+
+<section class="section" id="about"><div class="container"><div class="section-head"><div><div class="mono">The designer behind the work</div><h2 class="display section-title">ABOUT WALID</h2></div><p class="section-desc">A focused portfolio for creators who care about packaging their content as much as the content itself.</p></div>
+<div class="why-grid"><div class="why"><div class="big">01</div><h3>Concept First</h3><p>I don't start with random effects. I start with the strongest idea for the video.</p></div><div class="why"><div class="big">02</div><h3>Natural Visuals</h3><p>Realistic faces, lighting and composition designed to feel like a believable frame.</p></div><div class="why"><div class="big">03</div><h3>Client Focused</h3><p>Clear communication, revisions and a workflow built around making your channel easier to grow.</p></div></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="container"><div class="mono">Looking for a thumbnail designer?</div><h2 class="display">HIRE WALID</h2><p>Send me your channel, a video idea or a thumbnail brief. Let's turn the idea into something people notice.</p><div class="buttons"><a class="btn primary" href="mailto:walidartbusiness@gmail.com">Email Me</a><a class="btn" href="#work">View Portfolio</a></div></div></section>
+<footer><div class="container footer-inner"><span>© 2026 Walid Crafts</span><span>Thumbnail Design • Creative Direction</span></div></footer>
+
+<script src="projects.js"></script>
+<script>
+const grid=document.getElementById('portfolio');
+const list=Array.isArray(window.projects)?window.projects:[];
+if(!list.length){
+  grid.innerHTML=[1,2,3,4].map(n=>`
+    <article class="project"><div class="project-placeholder"><div>
+      <div class="project-number">0${n}</div>
+      <h3>Your Thumbnail Project</h3>
+      <p>Add your image in /projects and one project entry in projects.js.</p>
+    </div></div></article>`).join('');
+}else{
+  grid.innerHTML=list.map((p,i)=>`
+    <article class="project">
+      <img src="${p.image}" alt="${p.title||'Walid Crafts thumbnail project'}" loading="lazy">
+      <div class="project-overlay">
+        <h3>${p.title||'Thumbnail Project'}</h3>
+        <p>${p.category||'YouTube Thumbnail'}${p.description?' • '+p.description:''}</p>
+      </div>
+    </article>`).join('');
+}
+</script>
+</body>
+</html>
